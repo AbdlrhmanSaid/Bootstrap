@@ -56,6 +56,55 @@ ul {
   box-shadow: none;
 }
 /* end nav bar */
+/* start login */
+.log-in {
+  z-index: 1000;
+  background-color: var(--dark-color);
+  transition: 0.5s;
+  transform: translateY(-100%);
+}
+.log-in form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+}
+.log-in input {
+  border: none;
+  border-bottom: 1px solid white;
+}
+.log-in input:focus {
+  border-bottom: 1px solid white;
+  outline: none;
+}
+.log-in input::-webkit-input-placeholder {
+  color: white;
+}
+.log-in input::-moz-placeholder {
+  color: white;
+}
+.log-in input:-ms-input-placeholder {
+  color: white;
+}
+.log-in input::-ms-input-placeholder {
+  color: white;
+}
+.log-in input::placeholder {
+  color: white;
+}
+.log-in button,
+.log-in button:hover,
+.log-in button:focus {
+  color: white;
+  transform: translateX(-50%);
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+.log-in .close {
+  right: 8%;
+}
+/* end login */
 /* start landing */
 .landing {
   background-color: var(--dark-color);
@@ -241,11 +290,6 @@ ul {
 .copyright span:last-child {
   color: var(--yellow-color);
 }
-/* @media (max-width: 992px) {
-  .footer {
-    text-align: center;
-  }
-} */
 .footer .gmail {
   background-color: var(--red-color);
   color: var(--yellow-color);
